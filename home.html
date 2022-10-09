@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Yummy</title>
+  </head>
+  <body>
+    <header class="overflow-hidden">
+      <nav class="navbar navbar-expand-lg bg-white p-0 fixed-top">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand fs-1 " href="#">DFC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item ms-4 fs-5">
+                    <a class="nav-link active line p-0 m-2 fw-bold position-relative" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item ms-4 fs-5">
+                    <a class="nav-link line p-0 m-2 fw-bold position-relative" href="#randDish" id="getRandom">Random dish</a>
+                  </li>
+                  <li class="nav-item dropdown ms-4 fs-5">
+                    <a class="nav-link dropdown-toggle line p-0 m-2 fw-bold position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Our Meals
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" id="Pizza" href="#menu">Pizza</a></li>
+                      <li><a class="dropdown-item" id="pasta" href="#menu">Pasta</a></li>
+                      <li><a class="dropdown-item" id="beef" href="#menu">Beef</a></li>
+                      <li><a class="dropdown-item" id="Chicken" href="#menu">Chicken</a></li>
+                      <li><a class="dropdown-item" id="salad" href="#menu">Salad</a></li>
+                      <li><a class="dropdown-item" id="cakes" href="#menu">Cakes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ms-4 fs-5">
+                    <button class="nav-link btn border-0 text-white px-3 rounded-pill" href="#">Book a Table</button>
+                  </li>
+                </ul>
+              </div>
+      </nav>
+      <section>
+          <div class="container">
+            <div class="row pb-5 d-flex align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+              <div>
+                <img src="img/hero-img.png" class=" mt-5 w-75 dish " alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 text-lg-start text-md-center mt-lg-0 mt-5">
+              <div class="">
+                <h1 >Enjoy Your Healthy Delicious Food</h1>
+                <p class="homeCont fs-5 mt-3">Cook the food on us, and the payment is on you, and there are no discounts, ya 3alalm ya sha7ata</p>
+                <button class="bg-danger myDanger btn border-0 text-white px-3 py-2 fs-5 mt-4  rounded-pill" href="#">Book a Table</button>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+    </header>
+    <section class="py-5 overflow-hidden todayDish bg-danger overflow-hidden" id="randDish">
+      <div class="container ">
+        <div class=" row p-5 bg-white d-flex align-items-center flex-row-reverse " id="todayDish">
+        <h4>Take a Random Dish............</h4>
+        </div>
+        <div class="text-center" id="btn-rand">
+            <button class="btn btn-info rounded-pill mt-4 ">Random Dish</button>
+        </div>
+      </div>
+      <div id="ingredients" class="d-none position-fixed start-0 end-0 top-0 bottom-0 d-flex align-items-center vh-100 justify-content-center bg-black bg-opacity-50">
+          <div class="bg-white p-4 w-75">
+            <div class="d-flex justify-content-between mb-3" >
+              <h3>ingredients..</h3>
+              <button class="btn " id="getCopy"><i class="fa-regular fa-clipboard fs-4"></i></button>
+            </div>
+            <ul class="" id="ingredientsUl">
+              
+            </ul>
+
+          </div>
+        </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <div class="row gy-4" id="menu">
+          <div class="col-lg-4 col-md-6">
+            <div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+        <div id="ingredientsOfMenu" class="d-none position-fixed start-0 end-0 top-0 bottom-0 d-flex align-items-center vh-100 justify-content-center bg-black bg-opacity-50">
+          <div class="bg-white p-4 w-75">
+            <div class="d-flex justify-content-between mb-3" >
+              <h3>ingredients..</h3>
+              <button class="btn " id="getCopy"><i class="fa-regular fa-clipboard fs-4"></i></button>
+            </div>
+            <ul class="" id="ingredientsUlMenu">
+              
+            </ul>
+
+          </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>\
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
+

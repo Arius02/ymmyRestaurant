@@ -1,0 +1,64 @@
+:root {
+  --mainColor: rgb(23, 162, 184);
+  --mainTransition: all .5s;
+  --bgColor: #eee;
+  --color-default: #212529;
+  --color-primary: #ce1212;
+  --color-secondary: #37373f;
+}
+
+body,
+.loginDiv,
+input{
+  background-color: var(--bgColor) !important;
+}
+input{
+  color: var(--color-default);
+}
+input::placeholder {
+  color: var(--color-default) !important;
+}
+h1 {
+  color: var(--color-primary);
+}
+input:focus{
+  border-color: var(--color-secondary) ;
+  box-shadow: unset !important;
+}
+.loginInterface .login{
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.loginInterface button:hover {
+  color: white !important;
+  background-color: var(--color-primary);
+}
+.loginInterface p {
+  color: var(--color-secondary);
+  font-size: 1.1em;
+}
+.loginInterface p a {
+  color: var(--color-default);
+}
+.loginInterface p a:hover{
+  text-decoration: underline !important;
+}
+.fa-xmark-circle {
+  color: red;
+}
+form i {
+    top: 18px;
+    right: 10px;
+}
+small {
+  color: red;
+}
+.signUpPop{
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.249);
+}
+.signUpIneerDiv {
+  background-color: var(--bgColor);
+}

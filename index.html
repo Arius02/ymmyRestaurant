@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="loginInterface position-relative">
+    <div class="container d-flex vh-100  justify-content-center align-items-center">
+      <div class="loginDiv shadow-lg p-5 w-75 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="fw-semibold">DFC Restaurant</h1>
+      <form class="w-100">
+        <div class="position-relative">
+          <input type="email" name="email" class="form-control  mt-4 loginEmail" placeholder="Enter Your Email">
+          <i class="position-absolute fa-xl wrongEmaili  fa-regular fa-xmark-circle d-none"></i>
+          <i class="fa-regular  fa-circle-check d-none"></i>
+          <small class="wrongEmailp d-none  ">Wrong Email !</small>
+        </div>
+        <div class="position-relative">
+          <input type="password" name="password" class="form-control mt-4 loginPass" placeholder="Enter your Password">
+          <i class="position-absolute fa-xl wrongLogPassi  fa-regular fa-xmark-circle d-none"></i>
+          <small class="wrongLogPassp d-none">Wrong Password !</small>
+        </div>
+        <button type="" onclick="login()" class="btn form-control mt-4 mb-3 login " >Login</button>
+      </form>
+          <p>Don't have an account?  <a href="signUp.html" class="text-decoration-none " > Sign Up</a></p>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

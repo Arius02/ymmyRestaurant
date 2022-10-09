@@ -1,0 +1,120 @@
+:root {
+      --bgColor: #eee;
+      --color-default: #212529;
+      --color-primary: #ce1212;
+      --color-secondary: #37373f;
+}
+@font-face {
+  font-family: 'kfc', cursive;
+  src: url(../webfonts/Friz\ Quadrata\ Bold.otf);
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.265);
+}
+.navbar-brand{
+  font-family: 'kfc' ,cursive ;
+  font-weight: 900;
+}
+li button,
+.btn-1 {
+  background-color: var(--color-primary) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link,
+.nav-link:focus,
+.nav-link:hover{
+  color: black;
+}
+.line::before,
+.line.active::before{
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  width: 0;
+  background-color: var(--color-primary);
+  height: 2px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+.line:hover::before,
+.line.active::before {
+  width: 100%;
+}
+header {
+  background-color: var(--bgColor);
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  font-family: 'Amatic SC', cursive;
+}
+.homeCont {
+  color: #4f4f5a;
+}
+.mcmc {
+  color: rgb(255, 220, 0);
+}
+
+.golden {
+  color: gold;
+}
+
+#ingredientsUl {
+  max-width: 80% ;
+}
+#todayDish img {
+  max-height: 400px;
+}
+.danger {
+  color: var(--color-primary);
+}
+.myDanger{
+  background-color: var(--color-primary) !important ;
+  color: white !important;
+}
+.fixedHieght {
+  height: 230px !important;
+}
+
+.dish {
+  width: 550px !important;
+  margin-top: 90px !important;
+  margin-left: 60px !important;
+}
+@media screen and (max-width: 768px){
+  .dish{
+    width: 450px !important;
+    margin-top: 90px !important;
+    margin-left: 50px !important;
+  }
+}
+@media screen and (max-width: 468px){
+  .dish{
+    width: 300px !important;
+    margin-top: 90px !important;
+
+  }
+}
+
+.card-body{
+  height: 250px;
+}
+.card button {
+  bottom: 20px;
+}
+
+.card button:nth-child(1){
+  left: 40px;
+}
+.card button:nth-child(2){
+  right: 40px;
+}

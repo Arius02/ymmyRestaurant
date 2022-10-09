@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="loginInterface ">
+    <div class="container d-flex vh-100  justify-content-center align-items-center">
+      <div class="loginDiv shadow-lg p-5 w-75 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="fw-semibold ">DFC Restaurant</h1>
+      <form class="w-100">
+        <div class="position-relative">
+          <input type="text" name="name" class="form-control  mt-4" id="signUpName" placeholder="Enter Your Name">
+          <i class="position-absolute fa-xl wrongNamei  fa-regular fa-xmark-circle d-none"></i>
+          <i class="fa-regular text-success position-absolute nameSuc d-none fa-circle-check fa-xl"></i>
+          <small class="wrongNamep d-none  ">Invalid Name</small>
+        </div>
+        <div class="position-relative">
+          <input type="email" name="email" class="form-control mt-4" id="signUpEmail" placeholder="Enter Your Email">
+          <i class="position-absolute fa-xl wrongEmaili  fa-regular fa-xmark-circle d-none"></i>
+          <i class="fa-regular text-success position-absolute emailSuc d-none fa-circle-check fa-xl"></i>
+          <small class="wrongEmailp d-none">invalid Email !</small>
+          <small class="exEmail d-none">your email have been used before Please use onther email or <a href="index.html">sign in</a> !</small>
+        </div>
+        <div class="position-relative">
+          <input type="password" name="password" class="form-control mt-4" id="signUpPass" placeholder="Enter your Password">
+          <i class="position-absolute fa-xl wrongPassi  fa-regular fa-xmark-circle d-none"></i>
+          <i class="fa-regular text-success position-absolute passSuc d-none fa-circle-check fa-xl"></i>
+          <small class="wrongPassp d-none  ">Your password should be more between 6 and 16 character</small>
+        </div>
+        <div class="position-relative">
+          <input type="password" name="confirmPassword" class="form-control mt-4" id="signUpCPass"  placeholder="Confirm your Password">
+          <i class="position-absolute fa-xl wrongCPassi  fa-regular fa-xmark-circle d-none"></i>
+          <i class="fa-regular text-success position-absolute cPassSuc d-none fa-circle-check fa-xl"></i>
+          <small class="wrongCPassp d-none  ">The two passwords aren't the same</small>
+        </div>
+        <button type="submit" class="btn form-control mb-3 mt-4 login" >sign Up</button>
+      </form>
+              <p>You have an account?<a href="index.html" class="text-decoration-none "> Sign in</a></p>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/signUp.js"></script>
+</body>
+</html>
