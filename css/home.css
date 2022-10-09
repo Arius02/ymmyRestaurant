@@ -94,14 +94,15 @@ h1 {
   .dish{
     width: 450px !important;
     margin-top: 90px !important;
-    margin-left: 50px !important;
+    margin:90px auto 0 auto !important;
   }
 }
 @media screen and (max-width: 468px){
   .dish{
-    width: 300px !important;
+    width: 200px !important;
     margin-top: 90px !important;
-
+    margin-left:auto !important;
+    margin-right:auto !important;
   }
 }
 
