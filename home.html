@@ -89,6 +89,38 @@
     </section>
     <section class="py-5">
       <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-2 col-md-4 col-6 my-4 ">
+              <div>
+                <button onclick="getMenu('pizza')" class="btn rounded-pill btn-danger">Pizza</button>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-4 ">
+              <div>
+                <button onclick="getMenu('pasta')" class="btn rounded-pill btn-info">Psata</button>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-4 ">
+              <div>
+                <button onclick="getMenu('beef')" class="btn rounded-pill btn-warning">Beef</button>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-4 ">
+              <div>
+                <button onclick="getMenu('Chicken')" class="btn rounded-pill btn-success">Chicken</button>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-4 ">
+              <div>
+                <button onclick="getMenu('salad')" class="btn rounded-pill btn-primary">Salad</button>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 my-4  btn-ou">
+              <div>
+                <button onclick="getMenu('cake')" class="btn rounded-pill btn-secondary">Cake</button>
+              </div>
+            </div>
+          </div>
         <div class="row gy-4" id="menu">
           <div class="col-lg-4 col-md-6">
             <div>
@@ -104,11 +136,10 @@
               <h3>ingredients..</h3>
               <button class="btn" id="getCopy"><i class="fa-regular fa-clipboard fs-4 text-black"></i></button>
             </div>
-            <ul  id="ingredientsUlMenu">
-              
+            <ul  id="ingredientsUlMenu">  
             </ul>
-
           </div>
+
         </div>
     </section>
     <script src="js/bootstrap.bundle.min.js"></script>\
