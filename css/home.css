@@ -119,7 +119,8 @@ h1 {
 .card button:nth-child(2){
   right: 40px;
 }
-.ingredients,
-.ingredientsMenu{
-  z-index: 99999999999999999;
+
+#ingredients,
+#ingredientsOfMenu{
+  z-index: 99999999999999999999999;
 }
